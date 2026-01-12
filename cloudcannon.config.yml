@@ -1,7 +1,13 @@
-# .cloudcannon/config.yml
+collections_config:
+  pages:
+    path: src/pages
+    icon: wysiwyg
+    disable_url: false
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+timezone: Etc/UTC
 media_dir: public/images
-
-
 collections:
   pages:
     path: src/pages
