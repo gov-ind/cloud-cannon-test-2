@@ -1,0 +1,23 @@
+---
+const { title, hero } = Astro.props;
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Hero from '../components/Hero.astro';
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>{title}</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+</head>
+<body class="font-sans antialiased">
+  <Header />
+  {hero && <Hero {...hero} />}
+  <main class="p-8 prose mx-auto">
+    <slot />
+  </main>
+  <Footer />
+</body>
+</html>
+
