@@ -1,0 +1,40 @@
+# .cloudcannon/config.yml
+media_dir: public/images
+
+
+collections:
+  pages:
+    path: src/pages
+    output: true
+    name: Page
+    icon: article
+    schema:
+      hero:
+        type: object
+        label: Hero section
+        schema:
+          title:
+            type: string
+            label: Heading
+          subtitle:
+            type: string
+            label: Sub-heading
+          bgColor:
+            type: select
+            label: Background colour
+            options:
+              values:
+                - bg-indigo-700
+                - bg-blue-600
+                - bg-green-600
+                - bg-gray-800
+          textColor:
+            type: select
+            label: Text colour
+            options:
+              values:
+                - text-white
+                - text-gray-900
+          image:
+            type: image
+            label: Hero image
